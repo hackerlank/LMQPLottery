@@ -13,6 +13,7 @@
 		0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */; };
 		0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BC1FAF3B28004773E7 /* LaunchScreen.storyboard */; };
 		0F0BB0C11FAF3B28004773E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0C01FAF3B28004773E7 /* main.m */; };
+		848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A722E1FB0512F001AD512 /* LMCircleBannerView.m */; };
 		A1159D499BC4C424DE1250DE /* libPods-LMQPLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		0F0BB0BD1FAF3B28004773E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F0BB0BF1FAF3B28004773E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0BB0C01FAF3B28004773E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848A722D1FB0512F001AD512 /* LMCircleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCircleBannerView.h; sourceTree = "<group>"; };
+		848A722E1FB0512F001AD512 /* LMCircleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCircleBannerView.m; sourceTree = "<group>"; };
 		B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LMQPLottery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41B6C75DE253F90A1B34989 /* Pods-LMQPLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMQPLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMQPLottery/Pods-LMQPLottery.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F830393252B24B7D9A6298 /* Pods-LMQPLottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMQPLottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMQPLottery/Pods-LMQPLottery.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		0F0BB0B01FAF3B28004773E7 /* LMQPLottery */ = {
 			isa = PBXGroup;
 			children = (
+				848A722C1FB05022001AD512 /* LMBannerView */,
 				0F0BB0B11FAF3B28004773E7 /* AppDelegate.h */,
 				0F0BB0B21FAF3B28004773E7 /* AppDelegate.m */,
 				0F0BB0B41FAF3B28004773E7 /* ViewController.h */,
@@ -85,6 +89,15 @@
 				D0F830393252B24B7D9A6298 /* Pods-LMQPLottery.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		848A722C1FB05022001AD512 /* LMBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				848A722D1FB0512F001AD512 /* LMCircleBannerView.h */,
+				848A722E1FB0512F001AD512 /* LMCircleBannerView.m */,
+			);
+			path = LMBannerView;
 			sourceTree = "<group>";
 		};
 		D4739749F10DA0BAFA0D90B7 /* Frameworks */ = {
@@ -220,6 +233,7 @@
 				0F0BB0B61FAF3B28004773E7 /* ViewController.m in Sources */,
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
 				0F0BB0B31FAF3B28004773E7 /* AppDelegate.m in Sources */,
+				848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
