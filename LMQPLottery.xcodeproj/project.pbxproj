@@ -7,27 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F0BB0B31FAF3B28004773E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0B21FAF3B28004773E7 /* AppDelegate.m */; };
-		0F0BB0B61FAF3B28004773E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0B51FAF3B28004773E7 /* ViewController.m */; };
-		0F0BB0B91FAF3B28004773E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0B71FAF3B28004773E7 /* Main.storyboard */; };
 		0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */; };
 		0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BC1FAF3B28004773E7 /* LaunchScreen.storyboard */; };
 		0F0BB0C11FAF3B28004773E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0C01FAF3B28004773E7 /* main.m */; };
+		0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0D71FAF4257004773E7 /* LMTabBarController.m */; };
+		0F0BB0DB1FAF4273004773E7 /* LMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0DA1FAF4273004773E7 /* LMNavigationController.m */; };
+		0F0BB0DE1FAF42C4004773E7 /* LMBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0DD1FAF42C4004773E7 /* LMBaseController.m */; };
+		0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0E01FAF42E0004773E7 /* LMBaseModel.m */; };
+		0F0BB0E41FAF42F1004773E7 /* LMBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0E31FAF42F1004773E7 /* LMBaseApi.m */; };
+		0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F01FAF476B004773E7 /* LMNetworkingManager.m */; };
+		0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F41FAF47CD004773E7 /* LMResponse.m */; };
+		0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */; };
+		0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */; };
 		848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A722E1FB0512F001AD512 /* LMCircleBannerView.m */; };
 		A1159D499BC4C424DE1250DE /* libPods-LMQPLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F0BB0AE1FAF3B28004773E7 /* LMQPLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMQPLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F0BB0B11FAF3B28004773E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0F0BB0B21FAF3B28004773E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F0BB0B41FAF3B28004773E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F0BB0B51FAF3B28004773E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0F0BB0B81FAF3B28004773E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F0BB0BD1FAF3B28004773E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F0BB0BF1FAF3B28004773E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0BB0C01FAF3B28004773E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F0BB0D61FAF4257004773E7 /* LMTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMTabBarController.h; sourceTree = "<group>"; };
+		0F0BB0D71FAF4257004773E7 /* LMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMTabBarController.m; sourceTree = "<group>"; };
+		0F0BB0D91FAF4273004773E7 /* LMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMNavigationController.h; sourceTree = "<group>"; };
+		0F0BB0DA1FAF4273004773E7 /* LMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMNavigationController.m; sourceTree = "<group>"; };
+		0F0BB0DC1FAF42C4004773E7 /* LMBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBaseController.h; sourceTree = "<group>"; };
+		0F0BB0DD1FAF42C4004773E7 /* LMBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBaseController.m; sourceTree = "<group>"; };
+		0F0BB0DF1FAF42E0004773E7 /* LMBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBaseModel.h; sourceTree = "<group>"; };
+		0F0BB0E01FAF42E0004773E7 /* LMBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBaseModel.m; sourceTree = "<group>"; };
+		0F0BB0E21FAF42F1004773E7 /* LMBaseApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBaseApi.h; sourceTree = "<group>"; };
+		0F0BB0E31FAF42F1004773E7 /* LMBaseApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBaseApi.m; sourceTree = "<group>"; };
+		0F0BB0EB1FAF4514004773E7 /* LMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMPrefixHeader.pch; sourceTree = "<group>"; };
+		0F0BB0EC1FAF4532004773E7 /* LMApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMApi.h; sourceTree = "<group>"; };
+		0F0BB0ED1FAF4590004773E7 /* LMConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMConst.h; sourceTree = "<group>"; };
+		0F0BB0EF1FAF476B004773E7 /* LMNetworkingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMNetworkingManager.h; sourceTree = "<group>"; };
+		0F0BB0F01FAF476B004773E7 /* LMNetworkingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMNetworkingManager.m; sourceTree = "<group>"; };
+		0F0BB0F31FAF47CD004773E7 /* LMResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMResponse.h; sourceTree = "<group>"; };
+		0F0BB0F41FAF47CD004773E7 /* LMResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMResponse.m; sourceTree = "<group>"; };
+		0F0BB0F71FAF4B04004773E7 /* LMProgressHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMProgressHud.h; sourceTree = "<group>"; };
+		0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMProgressHud.m; sourceTree = "<group>"; };
+		0F0BB0FB1FAF500A004773E7 /* UIColor+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
+		0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
 		848A722D1FB0512F001AD512 /* LMCircleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCircleBannerView.h; sourceTree = "<group>"; };
 		848A722E1FB0512F001AD512 /* LMCircleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCircleBannerView.m; sourceTree = "<group>"; };
 		B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LMQPLottery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +69,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F00CE361FB0A919006E80D6 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0F00CE371FB0A919006E80D6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		0F00CE381FB0A919006E80D6 /* RechargeRoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RechargeRoom;
+			sourceTree = "<group>";
+		};
+		0F00CE391FB0A919006E80D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0F00CE3A1FB0A91A006E80D6 /* BettingInformation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BettingInformation;
+			sourceTree = "<group>";
+		};
+		0F00CE3B1FB0A91A006E80D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		0F0BB0A51FAF3B28004773E7 = {
 			isa = PBXGroup;
 			children = (
@@ -68,18 +132,184 @@
 		0F0BB0B01FAF3B28004773E7 /* LMQPLottery */ = {
 			isa = PBXGroup;
 			children = (
-				848A722C1FB05022001AD512 /* LMBannerView */,
-				0F0BB0B11FAF3B28004773E7 /* AppDelegate.h */,
-				0F0BB0B21FAF3B28004773E7 /* AppDelegate.m */,
-				0F0BB0B41FAF3B28004773E7 /* ViewController.h */,
-				0F0BB0B51FAF3B28004773E7 /* ViewController.m */,
-				0F0BB0B71FAF3B28004773E7 /* Main.storyboard */,
+				0F0BB0C71FAF408E004773E7 /* Api */,
+				0F0BB0CB1FAF408F004773E7 /* Base */,
+				0F0BB0CC1FAF408F004773E7 /* Classes */,
+				0F0BB0CA1FAF408F004773E7 /* Custom */,
+				0F0BB0C81FAF408E004773E7 /* Other */,
+				0F0BB0C91FAF408F004773E7 /* Support */,
 				0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */,
 				0F0BB0BC1FAF3B28004773E7 /* LaunchScreen.storyboard */,
 				0F0BB0BF1FAF3B28004773E7 /* Info.plist */,
 				0F0BB0C01FAF3B28004773E7 /* main.m */,
 			);
 			path = LMQPLottery;
+			sourceTree = "<group>";
+		};
+		0F0BB0C71FAF408E004773E7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0F21FAF47BD004773E7 /* LMResponse */,
+				0F0BB0EE1FAF4752004773E7 /* LMNetworkingManager */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0F0BB0C81FAF408E004773E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0F0BB0C91FAF408F004773E7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0E71FAF44B2004773E7 /* Category */,
+				0F0BB0E61FAF44B2004773E7 /* PCH */,
+				0F0BB0E51FAF44B2004773E7 /* Tool */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0F0BB0CA1FAF408F004773E7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				848A722C1FB05022001AD512 /* LMBannerView */,
+				0F0BB0F61FAF4AE4004773E7 /* LMProgressHud */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		0F0BB0CB1FAF408F004773E7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0E81FAF44EC004773E7 /* LMBaseApi */,
+				0F0BB0E91FAF44ED004773E7 /* LMBaseController */,
+				0F0BB0EA1FAF44ED004773E7 /* LMBaseModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0F0BB0CC1FAF408F004773E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0F00CE3A1FB0A91A006E80D6 /* BettingInformation */,
+				0F00CE3B1FB0A91A006E80D6 /* Home */,
+				0F00CE391FB0A919006E80D6 /* Login */,
+				0F00CE361FB0A919006E80D6 /* Mine */,
+				0F00CE381FB0A919006E80D6 /* RechargeRoom */,
+				0F00CE371FB0A919006E80D6 /* Welcome */,
+				0F0BB0CD1FAF41A5004773E7 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0F0BB0CD1FAF41A5004773E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0D51FAF4230004773E7 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0F0BB0D51FAF4230004773E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0D61FAF4257004773E7 /* LMTabBarController.h */,
+				0F0BB0D71FAF4257004773E7 /* LMTabBarController.m */,
+				0F0BB0D91FAF4273004773E7 /* LMNavigationController.h */,
+				0F0BB0DA1FAF4273004773E7 /* LMNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F0BB0E51FAF44B2004773E7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0F0BB0E61FAF44B2004773E7 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0EB1FAF4514004773E7 /* LMPrefixHeader.pch */,
+				0F0BB0EC1FAF4532004773E7 /* LMApi.h */,
+				0F0BB0ED1FAF4590004773E7 /* LMConst.h */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		0F0BB0E71FAF44B2004773E7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0FA1FAF4FE5004773E7 /* UIColor */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0F0BB0E81FAF44EC004773E7 /* LMBaseApi */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0E21FAF42F1004773E7 /* LMBaseApi.h */,
+				0F0BB0E31FAF42F1004773E7 /* LMBaseApi.m */,
+			);
+			path = LMBaseApi;
+			sourceTree = "<group>";
+		};
+		0F0BB0E91FAF44ED004773E7 /* LMBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0DC1FAF42C4004773E7 /* LMBaseController.h */,
+				0F0BB0DD1FAF42C4004773E7 /* LMBaseController.m */,
+			);
+			path = LMBaseController;
+			sourceTree = "<group>";
+		};
+		0F0BB0EA1FAF44ED004773E7 /* LMBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0DF1FAF42E0004773E7 /* LMBaseModel.h */,
+				0F0BB0E01FAF42E0004773E7 /* LMBaseModel.m */,
+			);
+			path = LMBaseModel;
+			sourceTree = "<group>";
+		};
+		0F0BB0EE1FAF4752004773E7 /* LMNetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0EF1FAF476B004773E7 /* LMNetworkingManager.h */,
+				0F0BB0F01FAF476B004773E7 /* LMNetworkingManager.m */,
+			);
+			path = LMNetworkingManager;
+			sourceTree = "<group>";
+		};
+		0F0BB0F21FAF47BD004773E7 /* LMResponse */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0F31FAF47CD004773E7 /* LMResponse.h */,
+				0F0BB0F41FAF47CD004773E7 /* LMResponse.m */,
+			);
+			path = LMResponse;
+			sourceTree = "<group>";
+		};
+		0F0BB0F61FAF4AE4004773E7 /* LMProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0F71FAF4B04004773E7 /* LMProgressHud.h */,
+				0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */,
+			);
+			path = LMProgressHud;
+			sourceTree = "<group>";
+		};
+		0F0BB0FA1FAF4FE5004773E7 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				0F0BB0FB1FAF500A004773E7 /* UIColor+Transform.h */,
+				0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		50CD4C55D052263F4481B0A9 /* Pods */ = {
@@ -138,7 +368,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "林宏敏";
+				ORGANIZATIONNAME = "我的彩票";
 				TargetAttributes = {
 					0F0BB0AD1FAF3B28004773E7 = {
 						CreatedOnToolsVersion = 9.0;
@@ -171,7 +401,6 @@
 			files = (
 				0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */,
 				0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */,
-				0F0BB0B91FAF3B28004773E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,9 +459,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0BB0B61FAF3B28004773E7 /* ViewController.m in Sources */,
+				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
+				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
+				0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */,
+				0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */,
+				0F0BB0DE1FAF42C4004773E7 /* LMBaseController.m in Sources */,
+				0F0BB0DB1FAF4273004773E7 /* LMNavigationController.m in Sources */,
+				0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */,
+				0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */,
+				0F0BB0E41FAF42F1004773E7 /* LMBaseApi.m in Sources */,
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
-				0F0BB0B31FAF3B28004773E7 /* AppDelegate.m in Sources */,
 				848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,14 +476,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F0BB0B71FAF3B28004773E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F0BB0B81FAF3B28004773E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F0BB0BC1FAF3B28004773E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FY57H4H7A;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LMQPLottery/Support/PCH/LMPrefixHeader.pch";
 				INFOPLIST_FILE = LMQPLottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LMin.LMQPLottery;
@@ -385,6 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FY57H4H7A;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LMQPLottery/Support/PCH/LMPrefixHeader.pch";
 				INFOPLIST_FILE = LMQPLottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LMin.LMQPLottery;
