@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LMNetworkingManager.h"
 @interface LMBaseApi : NSObject
+//签名
+-(NSDictionary *)getApp_sign:(NSDictionary *)dic;
 
+//Auth
+-(NSString *)getUserAuthWithUid:(NSString *)uid
+                          token:(NSString *)token;
 @end

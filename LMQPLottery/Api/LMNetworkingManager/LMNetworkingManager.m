@@ -136,8 +136,9 @@ requestAnimation:(requestAnimation )anmimation{
     }else if ([method isEqualToString:@"POST"]){
         [[LMNetworkingManager shareInstance] POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
+            [[LMNetworkingManager shareInstance] requestSuccessData:responseObject onCompletion:completion failure:failure requestAnimation:animation];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            
+            [[LMNetworkingManager shareInstance] requestFailureError:error onCompletion:completion failure:failure requestAnimation:animation];
         }];
         
         
@@ -162,7 +163,7 @@ requestAnimation:(requestAnimation )anmimation{
         
         
         if (failure) {
-            NSError *error=[NSError errorWithDomain:NSURLErrorDomain code:response.code userInfo:@{@"data":response.message}];
+            NSError *error=[NSError errorWithDomain:NSURLErrorDomain code:response.code.intValue userInfo:@{@"data":response.message}];
             
             failure(error);
         }
@@ -178,7 +179,9 @@ requestAnimation:(requestAnimation )anmimation{
             LMToast(response.message);
         }
         if (failure) {
-            NSError *error=[NSError errorWithDomain:NSURLErrorDomain code:response.code userInfo:@{@"data":response.message}];
+            response.message=response.message.length?response.message:@"";
+            
+            NSError *error=[NSError errorWithDomain:NSURLErrorDomain code:response.code.intValue userInfo:@{@"data":response.message}];
             
             failure(error);
         }

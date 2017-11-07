@@ -20,8 +20,10 @@
 
 -(void)setModel:(id)model{
     _model=model;
-    NSString *imageUrl=[model valueForKey:@"imageUrl"];
-    [self.bannerImage sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@""]];
+    if ([model isKindOfClass:[NSDictionary class]]) {
+        [self.bannerImage sd_setImageWithURL:[NSURL URLWithString:model[@"path"]] placeholderImage:[UIImage imageNamed:@""]];
+    }
+    
     
 }
 
@@ -44,7 +46,9 @@
 
 
 @interface LMCircleBannerView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
-
+{
+    NSInteger _itemindex;
+}
 @property(nonatomic,weak)UICollectionView *collectionView;
 @property(nonatomic, assign)NSUInteger totalItemsCount;
 
@@ -60,10 +64,21 @@ static NSString *const LMCycleBannerCollectionCellId=@"LMCycleBannerCollectionCe
     }
     return self;
 }
+
 -(void)setImageArray:(NSArray *)imageArray{
     _imageArray=imageArray;
-    _totalItemsCount=imageArray.count*100;
+    _totalItemsCount=imageArray.count*4;
+    [self.collectionView reloadData];
     
+}
+//获取当前的index
+-(NSInteger)getCurrentIndex{
+    if (self.collectionView.mas_width==0 ||self.collectionView.mas_height==0) {
+        return 0;
+    }
+    NSInteger index=0;
+    index=(self.collectionView.contentOffset.x/[UIScreen mainScreen].bounds.size.width)+0.5;
+   return MAX(0, index);
 }
 #pragma mark -UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -81,15 +96,49 @@ static NSString *const LMCycleBannerCollectionCellId=@"LMCycleBannerCollectionCe
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake(self.frame.size.width, self.frame.size.height);
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    _itemindex=[self getCurrentIndex];
+    
+    
+}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    
+    NSUInteger halfTotalItemsCount=_totalItemsCount*0.5;
+    if (_itemindex>=_totalItemsCount-self.imageArray.count) {
+        NSUInteger padding=_itemindex%self.imageArray.count;
+        CGFloat leftInset=(halfTotalItemsCount +padding-1) *[UIScreen mainScreen].bounds.size.width;
+        CGFloat rightInset=(halfTotalItemsCount+padding -1)*kScreenWidth -(padding *2+1)*kScreenWidth;
+        
+        
+        LMLog(@"%ld--padding:%ld,left:%f---right:%f",(long)_itemindex,padding,leftInset,rightInset);
+        self.collectionView.contentInset=UIEdgeInsetsMake(0, -leftInset, 0, -rightInset);
+        NSUInteger targetIndex=_totalItemsCount*0.5;
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        [self.collectionView setContentOffset:CGPointMake(self.collectionView.contentOffset.x-[UIScreen mainScreen].bounds.size.width, 0)];
+
+    }
+    
+    
+}
 #pragma mark -
 #pragma mark 懒加载
 -(UICollectionView *)collectionView{
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+        layout.minimumLineSpacing=0;
+        layout.minimumInteritemSpacing=0;
+        layout.scrollDirection=UICollectionViewScrollDirectionHorizontal;
         UICollectionView *collectionView=[[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+        collectionView.pagingEnabled=YES;
         collectionView.dataSource=self;
         collectionView.delegate=self;
         [self addSubview:collectionView];
+        
+        [collectionView registerClass:[LMCycleBannerCollectionCell class] forCellWithReuseIdentifier:LMCycleBannerCollectionCellId];
+        [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(0);
+        }];
         _collectionView=collectionView;
     }
     return _collectionView;

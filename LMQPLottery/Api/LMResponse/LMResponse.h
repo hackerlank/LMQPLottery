@@ -10,7 +10,7 @@
 
 @interface LMResponse : NSObject
 
-@property(nonatomic, assign)int code;
+@property(nonatomic, strong)NSNumber *code;
 @property(nonatomic, assign)id data;
 @property(nonatomic, copy)NSString *message;
 

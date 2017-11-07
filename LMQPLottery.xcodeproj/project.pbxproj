@@ -19,7 +19,17 @@
 		0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F41FAF47CD004773E7 /* LMResponse.m */; };
 		0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */; };
 		0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */; };
+		844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */; };
 		848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A722E1FB0512F001AD512 /* LMCircleBannerView.m */; };
+		84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A1E1FB145A7004D9992 /* LMTabBar.m */; };
+		84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A211FB145ED004D9992 /* LMBettingRecordController.m */; };
+		84F73A251FB14606004D9992 /* LMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A241FB14606004D9992 /* LMHomeViewController.m */; };
+		84F73A281FB14625004D9992 /* LMLotteryInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A271FB14625004D9992 /* LMLotteryInformationController.m */; };
+		84F73A2B1FB14636004D9992 /* LMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A2A1FB14636004D9992 /* LMMineViewController.m */; };
+		84F73A311FB146DC004D9992 /* LMRechargeRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A301FB146DC004D9992 /* LMRechargeRoomController.m */; };
+		84F73A361FB14AA9004D9992 /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A351FB14AA9004D9992 /* LMAppDelegate.m */; };
+		84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A381FB14FB0004D9992 /* LMHomeView.m */; };
+		84F73A3D1FB15065004D9992 /* LMHomeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A3C1FB15065004D9992 /* LMHomeApi.m */; };
 		A1159D499BC4C424DE1250DE /* libPods-LMQPLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +60,28 @@
 		0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMProgressHud.m; sourceTree = "<group>"; };
 		0F0BB0FB1FAF500A004773E7 /* UIColor+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
 		0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
+		844D1B8A1FB1BD1B009E90C6 /* HomeLotteryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeLotteryCell.h; sourceTree = "<group>"; };
+		844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeLotteryCell.m; sourceTree = "<group>"; };
 		848A722D1FB0512F001AD512 /* LMCircleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCircleBannerView.h; sourceTree = "<group>"; };
 		848A722E1FB0512F001AD512 /* LMCircleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCircleBannerView.m; sourceTree = "<group>"; };
+		84F73A1D1FB145A7004D9992 /* LMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMTabBar.h; sourceTree = "<group>"; };
+		84F73A1E1FB145A7004D9992 /* LMTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMTabBar.m; sourceTree = "<group>"; };
+		84F73A201FB145ED004D9992 /* LMBettingRecordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBettingRecordController.h; sourceTree = "<group>"; };
+		84F73A211FB145ED004D9992 /* LMBettingRecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBettingRecordController.m; sourceTree = "<group>"; };
+		84F73A231FB14606004D9992 /* LMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMHomeViewController.h; sourceTree = "<group>"; };
+		84F73A241FB14606004D9992 /* LMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMHomeViewController.m; sourceTree = "<group>"; };
+		84F73A261FB14625004D9992 /* LMLotteryInformationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLotteryInformationController.h; sourceTree = "<group>"; };
+		84F73A271FB14625004D9992 /* LMLotteryInformationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLotteryInformationController.m; sourceTree = "<group>"; };
+		84F73A291FB14636004D9992 /* LMMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMineViewController.h; sourceTree = "<group>"; };
+		84F73A2A1FB14636004D9992 /* LMMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMineViewController.m; sourceTree = "<group>"; };
+		84F73A2F1FB146DC004D9992 /* LMRechargeRoomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRechargeRoomController.h; sourceTree = "<group>"; };
+		84F73A301FB146DC004D9992 /* LMRechargeRoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRechargeRoomController.m; sourceTree = "<group>"; };
+		84F73A341FB14AA9004D9992 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
+		84F73A351FB14AA9004D9992 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
+		84F73A371FB14FB0004D9992 /* LMHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMHomeView.h; sourceTree = "<group>"; };
+		84F73A381FB14FB0004D9992 /* LMHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMHomeView.m; sourceTree = "<group>"; };
+		84F73A3B1FB15065004D9992 /* LMHomeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMHomeApi.h; sourceTree = "<group>"; };
+		84F73A3C1FB15065004D9992 /* LMHomeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMHomeApi.m; sourceTree = "<group>"; };
 		B306CB64B1216D2255DAB3B4 /* libPods-LMQPLottery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LMQPLottery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41B6C75DE253F90A1B34989 /* Pods-LMQPLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMQPLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMQPLottery/Pods-LMQPLottery.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F830393252B24B7D9A6298 /* Pods-LMQPLottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMQPLottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-LMQPLottery/Pods-LMQPLottery.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,48 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F00CE361FB0A919006E80D6 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		0F00CE371FB0A919006E80D6 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Welcome;
-			sourceTree = "<group>";
-		};
-		0F00CE381FB0A919006E80D6 /* RechargeRoom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RechargeRoom;
-			sourceTree = "<group>";
-		};
-		0F00CE391FB0A919006E80D6 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		0F00CE3A1FB0A91A006E80D6 /* BettingInformation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BettingInformation;
-			sourceTree = "<group>";
-		};
-		0F00CE3B1FB0A91A006E80D6 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		0F0BB0A51FAF3B28004773E7 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +137,7 @@
 		0F0BB0C71FAF408E004773E7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				84F73A3A1FB15051004D9992 /* LMHomeApi */,
 				0F0BB0F21FAF47BD004773E7 /* LMResponse */,
 				0F0BB0EE1FAF4752004773E7 /* LMNetworkingManager */,
 			);
@@ -158,6 +147,8 @@
 		0F0BB0C81FAF408E004773E7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				84F73A341FB14AA9004D9992 /* LMAppDelegate.h */,
+				84F73A351FB14AA9004D9992 /* LMAppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -194,13 +185,12 @@
 		0F0BB0CC1FAF408F004773E7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0F00CE3A1FB0A91A006E80D6 /* BettingInformation */,
-				0F00CE3B1FB0A91A006E80D6 /* Home */,
-				0F00CE391FB0A919006E80D6 /* Login */,
-				0F00CE361FB0A919006E80D6 /* Mine */,
-				0F00CE381FB0A919006E80D6 /* RechargeRoom */,
-				0F00CE371FB0A919006E80D6 /* Welcome */,
 				0F0BB0CD1FAF41A5004773E7 /* Main */,
+				84F73A081FB14567004D9992 /* BettingRecord */,
+				84F73A101FB14567004D9992 /* Home */,
+				84F73A0C1FB14567004D9992 /* LotteryInformation */,
+				84F73A181FB14567004D9992 /* Mine */,
+				84F73A141FB14567004D9992 /* RechargeRoom */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -208,6 +198,7 @@
 		0F0BB0CD1FAF41A5004773E7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84F73A1C1FB14581004D9992 /* View */,
 				0F0BB0D51FAF4230004773E7 /* Controller */,
 			);
 			path = Main;
@@ -328,6 +319,193 @@
 				848A722E1FB0512F001AD512 /* LMCircleBannerView.m */,
 			);
 			path = LMBannerView;
+			sourceTree = "<group>";
+		};
+		84F73A081FB14567004D9992 /* BettingRecord */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A091FB14567004D9992 /* Controller */,
+				84F73A0A1FB14567004D9992 /* Model */,
+				84F73A0B1FB14567004D9992 /* View */,
+			);
+			path = BettingRecord;
+			sourceTree = "<group>";
+		};
+		84F73A091FB14567004D9992 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A201FB145ED004D9992 /* LMBettingRecordController.h */,
+				84F73A211FB145ED004D9992 /* LMBettingRecordController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F73A0A1FB14567004D9992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F73A0B1FB14567004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A0C1FB14567004D9992 /* LotteryInformation */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A0D1FB14567004D9992 /* Controller */,
+				84F73A0E1FB14567004D9992 /* Model */,
+				84F73A0F1FB14567004D9992 /* View */,
+			);
+			path = LotteryInformation;
+			sourceTree = "<group>";
+		};
+		84F73A0D1FB14567004D9992 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A261FB14625004D9992 /* LMLotteryInformationController.h */,
+				84F73A271FB14625004D9992 /* LMLotteryInformationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F73A0E1FB14567004D9992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F73A0F1FB14567004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A101FB14567004D9992 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A111FB14567004D9992 /* Controller */,
+				84F73A121FB14567004D9992 /* Model */,
+				84F73A131FB14567004D9992 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84F73A111FB14567004D9992 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A231FB14606004D9992 /* LMHomeViewController.h */,
+				84F73A241FB14606004D9992 /* LMHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F73A121FB14567004D9992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F73A131FB14567004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A371FB14FB0004D9992 /* LMHomeView.h */,
+				84F73A381FB14FB0004D9992 /* LMHomeView.m */,
+				844D1B8A1FB1BD1B009E90C6 /* HomeLotteryCell.h */,
+				844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A141FB14567004D9992 /* RechargeRoom */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A151FB14567004D9992 /* Controller */,
+				84F73A161FB14567004D9992 /* Model */,
+				84F73A171FB14567004D9992 /* View */,
+			);
+			path = RechargeRoom;
+			sourceTree = "<group>";
+		};
+		84F73A151FB14567004D9992 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A2F1FB146DC004D9992 /* LMRechargeRoomController.h */,
+				84F73A301FB146DC004D9992 /* LMRechargeRoomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F73A161FB14567004D9992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F73A171FB14567004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A181FB14567004D9992 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A191FB14567004D9992 /* Controller */,
+				84F73A1A1FB14567004D9992 /* Model */,
+				84F73A1B1FB14567004D9992 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		84F73A191FB14567004D9992 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A291FB14636004D9992 /* LMMineViewController.h */,
+				84F73A2A1FB14636004D9992 /* LMMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F73A1A1FB14567004D9992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F73A1B1FB14567004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A1C1FB14581004D9992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A1D1FB145A7004D9992 /* LMTabBar.h */,
+				84F73A1E1FB145A7004D9992 /* LMTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F73A3A1FB15051004D9992 /* LMHomeApi */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A3B1FB15065004D9992 /* LMHomeApi.h */,
+				84F73A3C1FB15065004D9992 /* LMHomeApi.m */,
+			);
+			path = LMHomeApi;
 			sourceTree = "<group>";
 		};
 		D4739749F10DA0BAFA0D90B7 /* Frameworks */ = {
@@ -459,16 +637,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F73A311FB146DC004D9992 /* LMRechargeRoomController.m in Sources */,
+				84F73A361FB14AA9004D9992 /* LMAppDelegate.m in Sources */,
+				84F73A3D1FB15065004D9992 /* LMHomeApi.m in Sources */,
 				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
 				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
+				84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */,
+				84F73A2B1FB14636004D9992 /* LMMineViewController.m in Sources */,
 				0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */,
 				0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */,
+				844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */,
 				0F0BB0DE1FAF42C4004773E7 /* LMBaseController.m in Sources */,
 				0F0BB0DB1FAF4273004773E7 /* LMNavigationController.m in Sources */,
+				84F73A281FB14625004D9992 /* LMLotteryInformationController.m in Sources */,
+				84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */,
 				0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */,
 				0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */,
 				0F0BB0E41FAF42F1004773E7 /* LMBaseApi.m in Sources */,
+				84F73A251FB14606004D9992 /* LMHomeViewController.m in Sources */,
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
+				84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */,
 				848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

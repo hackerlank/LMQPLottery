@@ -7,6 +7,14 @@
 //
 
 #import "LMTabBarController.h"
+#import "LMNavigationController.h"
+
+#import "LMHomeViewController.h"
+#import "LMLotteryInformationController.h"
+#import "LMRechargeRoomController.h"
+#import "LMBettingRecordController.h"
+#import "LMMineViewController.h"
+
 
 @interface LMTabBarController ()
 
@@ -16,26 +24,57 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor whiteColor];
+    [self setupChildControllers];
    
 }
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+-(void)setupChildControllers{
+    LMHomeViewController *home=[[LMHomeViewController alloc]init];
+    
+    [self addOneChildControllerToTabBar:home title:@"首页" normalImageName:@"001" selectedImageName:@"001"];
+    
+    LMLotteryInformationController *infomationControlller=[[LMLotteryInformationController alloc]init];
+    [self addOneChildControllerToTabBar:infomationControlller title:@"开奖信息" normalImageName:@"001" selectedImageName:@"001"];
+    
+    LMBettingRecordController *recordController=[[LMBettingRecordController alloc]init];
+    [self addOneChildControllerToTabBar:recordController title:@"投注记录" normalImageName:@"001" selectedImageName:@"001"];
+    
+    LMMineViewController *mineController=[[LMMineViewController alloc]init];
+    [self addOneChildControllerToTabBar:mineController title:@"我的" normalImageName:@"001" selectedImageName:@"001"];
+    
+    
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)addOneChildControllerToTabBar:(UIViewController *)controller
+                               title:(NSString *)title
+                     normalImageName:(NSString *)normalName
+                   selectedImageName:(NSString *)selectedName{
+    controller.tabBarItem.title=title;
+    //图片设置
+    if (title.length) {
+        controller.tabBarItem.image=[[UIImage imageNamed:normalName]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+        UIImage *selectedImage=[[UIImage imageNamed:selectedName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        controller.tabBarItem.selectedImage=selectedImage;
+    }
+    
+    
+    //文字颜色设置
+    NSMutableDictionary *selectedDic=@{}.mutableCopy;
+    selectedDic[NSForegroundColorAttributeName]=[UIColor colorWithHexString:@"ffdc99"];
+    [controller.tabBarItem setTitleTextAttributes:selectedDic forState:UIControlStateSelected];
+    NSMutableDictionary *normalDic=@{}.mutableCopy;
+    normalDic[NSForegroundColorAttributeName]=[UIColor colorWithHexString:@"3a86e5"];
+    [controller.tabBarItem setTitleTextAttributes:normalDic forState:UIControlStateNormal];
+    
+    //位置调整
+    [controller.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];
+    [controller.tabBarItem setImageInsets:UIEdgeInsetsMake(-10, 0, 10, 0)];
+    LMNavigationController *navi=[[LMNavigationController alloc]initWithRootViewController:controller];
+    
+    [self addChildViewController:navi];
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

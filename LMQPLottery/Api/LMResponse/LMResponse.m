@@ -10,18 +10,18 @@
 
 @implementation LMResponse
 -(BOOL)isSuccess{
-    return (self.code && self.code ==0);
+    return (self.code && self.code.intValue ==0);
 }
 -(BOOL)isFail{
-    return (self.code && self.code ==-1);
+    return (self.code && self.code.intValue ==-1);
 }
 -(BOOL)isNeedLogin{
-    return (self.code && self.code ==10001);
+    return (self.code && self.code.intValue ==10001);
 }
 -(BOOL)isNeedRecharge{
-    return (self.code && self.code ==10002);
+    return (self.code && self.code.intValue ==10002);
 }
 -(BOOL)isRequestOften{
-    return (self.code && self.code ==20001);
+    return (self.code && self.code.intValue ==20001);
 }
 @end
