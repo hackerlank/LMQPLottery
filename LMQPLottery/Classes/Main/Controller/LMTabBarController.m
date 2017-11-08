@@ -15,8 +15,8 @@
 #import "LMBettingRecordController.h"
 #import "LMMineViewController.h"
 
-
-@interface LMTabBarController ()
+#import "LMTabBar.h"
+@interface LMTabBarController ()<LMTabBarDelegate>
 
 @end
 
@@ -24,22 +24,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupTabBar];
     [self setupChildControllers];
    
+}
+-(void)setupTabBar{
+    LMTabBar *customTabBar=[[LMTabBar alloc]init];
+    customTabBar.tabBarDelegate=self;
+    [self setValue:customTabBar forKey:@"tabBar"];
 }
 -(void)setupChildControllers{
     LMHomeViewController *home=[[LMHomeViewController alloc]init];
     
-    [self addOneChildControllerToTabBar:home title:@"首页" normalImageName:@"001" selectedImageName:@"001"];
+    [self addOneChildControllerToTabBar:home title:@"首页" normalImageName:@"tabbar_01_select" selectedImageName:@"tabbar_01_selected"];
     
     LMLotteryInformationController *infomationControlller=[[LMLotteryInformationController alloc]init];
-    [self addOneChildControllerToTabBar:infomationControlller title:@"开奖信息" normalImageName:@"001" selectedImageName:@"001"];
+    [self addOneChildControllerToTabBar:infomationControlller title:@"开奖信息" normalImageName:@"tabbar_02_select" selectedImageName:@"tabbar_02_selected"];
     
     LMBettingRecordController *recordController=[[LMBettingRecordController alloc]init];
-    [self addOneChildControllerToTabBar:recordController title:@"投注记录" normalImageName:@"001" selectedImageName:@"001"];
+    [self addOneChildControllerToTabBar:recordController title:@"投注记录" normalImageName:@"tabbar_03_select" selectedImageName:@"tabbar_03_selected"];
     
     LMMineViewController *mineController=[[LMMineViewController alloc]init];
-    [self addOneChildControllerToTabBar:mineController title:@"我的" normalImageName:@"001" selectedImageName:@"001"];
+    [self addOneChildControllerToTabBar:mineController title:@"我的" normalImageName:@"tabbar_04_select" selectedImageName:@"tabbar_04_selected"];
     
     
     
@@ -75,6 +81,11 @@
     
     
 }
-
+#pragma mark LMTabBarDelegate
+-(void)tabBarCenterButtonClicked{
+    
+    
+    
+}
 
 @end

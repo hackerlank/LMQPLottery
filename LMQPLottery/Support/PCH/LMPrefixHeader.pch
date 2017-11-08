@@ -29,7 +29,7 @@
 /*************************自定义**************************/
 #import "UIColor+Transform.h"
 #import "UIImage+GradientColor.h"
-
+#import "UIView+Frame.h"
 /*************************管理类**************************/
 
 //#import "LMNetworkManager.h"

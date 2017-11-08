@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0949461FB3459E00D74881 /* LotteryInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0949451FB3459E00D74881 /* LotteryInformationCell.m */; };
+		0F0949471FB3484400D74881 /* 液晶数字字体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0F0949411FB3436400D74881 /* 液晶数字字体.TTF */; };
+		0F0949481FB3484400D74881 /* lcdd.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0F0949421FB3436400D74881 /* lcdd.TTF */; };
+		0F0949491FB3484400D74881 /* liuhecai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F0949401FB3436300D74881 /* liuhecai.ttf */; };
+		0F09494A1FB3484400D74881 /* pmzd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F0949431FB3436400D74881 /* pmzd.ttf */; };
+		0F09494E1FB34D5900D74881 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F09494D1FB34D5900D74881 /* UIView+Frame.m */; };
 		0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */; };
 		0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BB0BC1FAF3B28004773E7 /* LaunchScreen.storyboard */; };
 		0F0BB0C11FAF3B28004773E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0C01FAF3B28004773E7 /* main.m */; };
@@ -40,6 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0949401FB3436300D74881 /* liuhecai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuhecai.ttf; sourceTree = "<group>"; };
+		0F0949411FB3436400D74881 /* 液晶数字字体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "液晶数字字体.TTF"; sourceTree = "<group>"; };
+		0F0949421FB3436400D74881 /* lcdd.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = lcdd.TTF; sourceTree = "<group>"; };
+		0F0949431FB3436400D74881 /* pmzd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pmzd.ttf; sourceTree = "<group>"; };
+		0F0949441FB3459E00D74881 /* LotteryInformationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LotteryInformationCell.h; path = LMQPLottery/Support/Category/UIColor/LotteryInformationCell.h; sourceTree = SOURCE_ROOT; };
+		0F0949451FB3459E00D74881 /* LotteryInformationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LotteryInformationCell.m; path = LMQPLottery/Support/Category/UIColor/LotteryInformationCell.m; sourceTree = SOURCE_ROOT; };
+		0F09494C1FB34D5900D74881 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		0F09494D1FB34D5900D74881 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		0F0BB0AE1FAF3B28004773E7 /* LMQPLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMQPLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0BB0BA1FAF3B28004773E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F0BB0BD1FAF3B28004773E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,6 +131,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F09493F1FB3435600D74881 /* 字体 */ = {
+			isa = PBXGroup;
+			children = (
+				0F0949411FB3436400D74881 /* 液晶数字字体.TTF */,
+				0F0949421FB3436400D74881 /* lcdd.TTF */,
+				0F0949401FB3436300D74881 /* liuhecai.ttf */,
+				0F0949431FB3436400D74881 /* pmzd.ttf */,
+			);
+			path = "字体";
+			sourceTree = "<group>";
+		};
+		0F09494B1FB34CF800D74881 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0F09494C1FB34D5900D74881 /* UIView+Frame.h */,
+				0F09494D1FB34D5900D74881 /* UIView+Frame.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		0F0BB0A51FAF3B28004773E7 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +209,7 @@
 		0F0BB0C91FAF408F004773E7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				0F09493F1FB3435600D74881 /* 字体 */,
 				0F0BB0E71FAF44B2004773E7 /* Category */,
 				0F0BB0E61FAF44B2004773E7 /* PCH */,
 				0F0BB0E51FAF44B2004773E7 /* Tool */,
@@ -255,6 +290,7 @@
 		0F0BB0E71FAF44B2004773E7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0F09494B1FB34CF800D74881 /* UIView */,
 				84551EE71FB2CA3B008583C8 /* UIImage */,
 				0F0BB0FA1FAF4FE5004773E7 /* UIColor */,
 			);
@@ -457,6 +493,8 @@
 		84F73A0F1FB14567004D9992 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F0949441FB3459E00D74881 /* LotteryInformationCell.h */,
+				0F0949451FB3459E00D74881 /* LotteryInformationCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -655,6 +693,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0949471FB3484400D74881 /* 液晶数字字体.TTF in Resources */,
+				0F0949481FB3484400D74881 /* lcdd.TTF in Resources */,
+				0F0949491FB3484400D74881 /* liuhecai.ttf in Resources */,
+				0F09494A1FB3484400D74881 /* pmzd.ttf in Resources */,
 				0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */,
 				0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */,
 			);
@@ -719,6 +761,7 @@
 				84F73A361FB14AA9004D9992 /* LMAppDelegate.m in Sources */,
 				84F73A3D1FB15065004D9992 /* LMHomeApi.m in Sources */,
 				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
+				0F0949461FB3459E00D74881 /* LotteryInformationCell.m in Sources */,
 				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
 				84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */,
 				84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */,
@@ -738,6 +781,7 @@
 				0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */,
 				0F0BB0E41FAF42F1004773E7 /* LMBaseApi.m in Sources */,
 				84551EEE1FB2F7B7008583C8 /* LMLotteryHallApi.m in Sources */,
+				0F09494E1FB34D5900D74881 /* UIView+Frame.m in Sources */,
 				84F73A251FB14606004D9992 /* LMHomeViewController.m in Sources */,
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
 				84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */,

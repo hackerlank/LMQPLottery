@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LMTabBarDelegate<NSObject>
+
+@optional
+-(void)tabBarCenterButtonClicked;
+
+@end
+
 @interface LMTabBar : UITabBar
 
+@property(nonatomic, weak)id<LMTabBarDelegate>tabBarDelegate;
 @end
