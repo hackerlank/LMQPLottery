@@ -8,6 +8,7 @@
 
 #import "LMNavigationController.h"
 #import "LMHomeViewController.h"
+#import "LMLotteryInformationController.h"
 @interface LMNavigationController ()
 
 @end
@@ -16,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
-    if ([viewController isKindOfClass:[LMHomeViewController class]]) {
+    if ([viewController isKindOfClass:[LMHomeViewController class]]||[viewController isKindOfClass:[LMLotteryInformationController class]]) {
         self.navigationBarHidden=YES;
     }
     if (self.viewControllers.count>0) {

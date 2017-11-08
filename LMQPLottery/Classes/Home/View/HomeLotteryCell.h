@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HomeLotteryModel.h"
 @interface HomeLotteryCell : UICollectionViewCell
-
+@property(nonatomic, strong)HomeLotteryModel *model;
 @end

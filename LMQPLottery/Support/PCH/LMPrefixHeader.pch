@@ -28,7 +28,7 @@
 
 /*************************自定义**************************/
 #import "UIColor+Transform.h"
-
+#import "UIImage+GradientColor.h"
 
 /*************************管理类**************************/
 
@@ -55,7 +55,7 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kWidth(R) (R)*(kScreenWidth)/375
 #define kHeight(R) (iPhone4?((R)*(kScreenHeight)/480):((R)*(kScreenHeight)/667))
-#define font(R) (R)*(kScreenWidth)/375
+#define font(R) [UIFont systemFontOfSize:(R)*(kScreenWidth)/375]
 /**  尺寸  */
 
 #define kDevice_Is_iPhone4S ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)

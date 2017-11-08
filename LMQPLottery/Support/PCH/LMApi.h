@@ -14,16 +14,17 @@
 
 
 
-
-
-
-
-
-
-
-
 /*
  首页接口
  */
 #define Home_Api @"/index.php/api/Index/index"//首页全部信息
 #define Home_AppVersion @"/index.php/api/AppVersion"//获取app版本
+
+
+/*
+ 购彩大厅
+ */
+#define Lottery_List @"/index.php/api/Lottery/lotteryList"//获取购彩大厅数据
+#define Lottery_Detail @"/index.php/api/lottery/detail"//获取投注界面详情
+#define Lottery_Order_Bet @"/index.php/api/Order/bet"//投注
+#define Lottery_Data_Last @"/index.php/api/lotteryData/last"//获取最新开奖结果

@@ -20,6 +20,12 @@
 		0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */; };
 		0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */; };
 		844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */; };
+		84551EE31FB29DC6008583C8 /* LoopTextScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EE21FB29DC6008583C8 /* LoopTextScrollView.m */; };
+		84551EE61FB2C7A2008583C8 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EE51FB2C7A2008583C8 /* UIImage+GradientColor.m */; };
+		84551EEA1FB2EAF5008583C8 /* HomeLotteryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EE91FB2EAF5008583C8 /* HomeLotteryModel.m */; };
+		84551EEE1FB2F7B7008583C8 /* LMLotteryHallApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EED1FB2F7B7008583C8 /* LMLotteryHallApi.m */; };
+		84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF11FB30198008583C8 /* LMPlayBaseController.m */; };
+		84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */; };
 		848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A722E1FB0512F001AD512 /* LMCircleBannerView.m */; };
 		84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A1E1FB145A7004D9992 /* LMTabBar.m */; };
 		84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A211FB145ED004D9992 /* LMBettingRecordController.m */; };
@@ -62,6 +68,18 @@
 		0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
 		844D1B8A1FB1BD1B009E90C6 /* HomeLotteryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeLotteryCell.h; sourceTree = "<group>"; };
 		844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeLotteryCell.m; sourceTree = "<group>"; };
+		84551EE11FB29DC6008583C8 /* LoopTextScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopTextScrollView.h; sourceTree = "<group>"; };
+		84551EE21FB29DC6008583C8 /* LoopTextScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTextScrollView.m; sourceTree = "<group>"; };
+		84551EE41FB2C7A2008583C8 /* UIImage+GradientColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradientColor.h"; sourceTree = "<group>"; };
+		84551EE51FB2C7A2008583C8 /* UIImage+GradientColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GradientColor.m"; sourceTree = "<group>"; };
+		84551EE81FB2EAF5008583C8 /* HomeLotteryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeLotteryModel.h; sourceTree = "<group>"; };
+		84551EE91FB2EAF5008583C8 /* HomeLotteryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeLotteryModel.m; sourceTree = "<group>"; };
+		84551EEC1FB2F7B7008583C8 /* LMLotteryHallApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLotteryHallApi.h; sourceTree = "<group>"; };
+		84551EED1FB2F7B7008583C8 /* LMLotteryHallApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLotteryHallApi.m; sourceTree = "<group>"; };
+		84551EF01FB30198008583C8 /* LMPlayBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMPlayBaseController.h; sourceTree = "<group>"; };
+		84551EF11FB30198008583C8 /* LMPlayBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMPlayBaseController.m; sourceTree = "<group>"; };
+		84551EF61FB3026D008583C8 /* LMXLXCLotteryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMXLXCLotteryController.h; sourceTree = "<group>"; };
+		84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMXLXCLotteryController.m; sourceTree = "<group>"; };
 		848A722D1FB0512F001AD512 /* LMCircleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCircleBannerView.h; sourceTree = "<group>"; };
 		848A722E1FB0512F001AD512 /* LMCircleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCircleBannerView.m; sourceTree = "<group>"; };
 		84F73A1D1FB145A7004D9992 /* LMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMTabBar.h; sourceTree = "<group>"; };
@@ -137,6 +155,7 @@
 		0F0BB0C71FAF408E004773E7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				84551EEB1FB2F7A1008583C8 /* LMLotteryHallApi */,
 				84F73A3A1FB15051004D9992 /* LMHomeApi */,
 				0F0BB0F21FAF47BD004773E7 /* LMResponse */,
 				0F0BB0EE1FAF4752004773E7 /* LMNetworkingManager */,
@@ -166,6 +185,7 @@
 		0F0BB0CA1FAF408F004773E7 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				84551EEF1FB3017C008583C8 /* LMPlayBaseController */,
 				848A722C1FB05022001AD512 /* LMBannerView */,
 				0F0BB0F61FAF4AE4004773E7 /* LMProgressHud */,
 			);
@@ -235,6 +255,7 @@
 		0F0BB0E71FAF44B2004773E7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				84551EE71FB2CA3B008583C8 /* UIImage */,
 				0F0BB0FA1FAF4FE5004773E7 /* UIColor */,
 			);
 			path = Category;
@@ -310,6 +331,59 @@
 				D0F830393252B24B7D9A6298 /* Pods-LMQPLottery.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		84551EE71FB2CA3B008583C8 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				84551EE41FB2C7A2008583C8 /* UIImage+GradientColor.h */,
+				84551EE51FB2C7A2008583C8 /* UIImage+GradientColor.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		84551EEB1FB2F7A1008583C8 /* LMLotteryHallApi */ = {
+			isa = PBXGroup;
+			children = (
+				84551EEC1FB2F7B7008583C8 /* LMLotteryHallApi.h */,
+				84551EED1FB2F7B7008583C8 /* LMLotteryHallApi.m */,
+			);
+			path = LMLotteryHallApi;
+			sourceTree = "<group>";
+		};
+		84551EEF1FB3017C008583C8 /* LMPlayBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				84551EF01FB30198008583C8 /* LMPlayBaseController.h */,
+				84551EF11FB30198008583C8 /* LMPlayBaseController.m */,
+			);
+			path = LMPlayBaseController;
+			sourceTree = "<group>";
+		};
+		84551EF31FB301DA008583C8 /* LMHomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84F73A231FB14606004D9992 /* LMHomeViewController.h */,
+				84F73A241FB14606004D9992 /* LMHomeViewController.m */,
+			);
+			path = LMHomeViewController;
+			sourceTree = "<group>";
+		};
+		84551EF41FB301F9008583C8 /* LMLotteryHallController */ = {
+			isa = PBXGroup;
+			children = (
+				84551EF51FB30244008583C8 /* 新六合彩 */,
+			);
+			path = LMLotteryHallController;
+			sourceTree = "<group>";
+		};
+		84551EF51FB30244008583C8 /* 新六合彩 */ = {
+			isa = PBXGroup;
+			children = (
+				84551EF61FB3026D008583C8 /* LMXLXCLotteryController.h */,
+				84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */,
+			);
+			path = "新六合彩";
 			sourceTree = "<group>";
 		};
 		848A722C1FB05022001AD512 /* LMBannerView */ = {
@@ -400,8 +474,8 @@
 		84F73A111FB14567004D9992 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84F73A231FB14606004D9992 /* LMHomeViewController.h */,
-				84F73A241FB14606004D9992 /* LMHomeViewController.m */,
+				84551EF41FB301F9008583C8 /* LMLotteryHallController */,
+				84551EF31FB301DA008583C8 /* LMHomeViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -409,6 +483,8 @@
 		84F73A121FB14567004D9992 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84551EE81FB2EAF5008583C8 /* HomeLotteryModel.h */,
+				84551EE91FB2EAF5008583C8 /* HomeLotteryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +496,8 @@
 				84F73A381FB14FB0004D9992 /* LMHomeView.m */,
 				844D1B8A1FB1BD1B009E90C6 /* HomeLotteryCell.h */,
 				844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */,
+				84551EE11FB29DC6008583C8 /* LoopTextScrollView.h */,
+				84551EE21FB29DC6008583C8 /* LoopTextScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -642,18 +720,24 @@
 				84F73A3D1FB15065004D9992 /* LMHomeApi.m in Sources */,
 				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
 				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
+				84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */,
 				84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */,
+				84551EE61FB2C7A2008583C8 /* UIImage+GradientColor.m in Sources */,
 				84F73A2B1FB14636004D9992 /* LMMineViewController.m in Sources */,
 				0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */,
 				0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */,
+				84551EEA1FB2EAF5008583C8 /* HomeLotteryModel.m in Sources */,
 				844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */,
 				0F0BB0DE1FAF42C4004773E7 /* LMBaseController.m in Sources */,
 				0F0BB0DB1FAF4273004773E7 /* LMNavigationController.m in Sources */,
+				84551EE31FB29DC6008583C8 /* LoopTextScrollView.m in Sources */,
+				84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */,
 				84F73A281FB14625004D9992 /* LMLotteryInformationController.m in Sources */,
 				84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */,
 				0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */,
 				0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */,
 				0F0BB0E41FAF42F1004773E7 /* LMBaseApi.m in Sources */,
+				84551EEE1FB2F7B7008583C8 /* LMLotteryHallApi.m in Sources */,
 				84F73A251FB14606004D9992 /* LMHomeViewController.m in Sources */,
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
 				84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */,

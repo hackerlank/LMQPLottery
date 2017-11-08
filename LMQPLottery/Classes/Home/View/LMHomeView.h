@@ -10,4 +10,6 @@
 
 @interface LMHomeView : UIView
 @property(nonatomic,copy)NSDictionary *data;
+
+@property(nonatomic, copy)void(^homeLotteryClick)(int);
 @end
