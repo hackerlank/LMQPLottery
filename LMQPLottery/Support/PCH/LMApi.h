@@ -28,3 +28,23 @@
 #define Lottery_Detail @"/index.php/api/lottery/detail"//获取投注界面详情
 #define Lottery_Order_Bet @"/index.php/api/Order/bet"//投注
 #define Lottery_Data_Last @"/index.php/api/lotteryData/last"//获取最新开奖结果
+
+
+/*
+ 投注列表
+ */
+#define Lottery_All @"/index.php/api/Lottery/all"//获取所有彩种
+/*
+ 开奖信息
+ */
+#define LotteryInfo_list @"/index.php/api/lottery/notice" //开奖信息列表
+#define LotteryInfo_Single_list @"/index.php/api/LotteryData/history" //开奖历史
+
+
+/*
+ 我的
+ */
+#define My_Profile @"/index.php/api/Member/appProfile"//我的资料
+#define My_Order @"/index.php/api/order"//我的订单
+#define My_Order_Detail   @"/index.php/api/Order/detail"
+#define My_Order_Cancel @"/index.php/api/Order/cancel"//撤单

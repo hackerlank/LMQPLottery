@@ -32,6 +32,11 @@
 		84551EEE1FB2F7B7008583C8 /* LMLotteryHallApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EED1FB2F7B7008583C8 /* LMLotteryHallApi.m */; };
 		84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF11FB30198008583C8 /* LMPlayBaseController.m */; };
 		84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */; };
+		8482B4521FB3EA890069E474 /* LMLotteryInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4511FB3EA890069E474 /* LMLotteryInfoApi.m */; };
+		8482B4551FB3F0B70069E474 /* LotteryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4541FB3F0B70069E474 /* LotteryInfoModel.m */; };
+		8482B4581FB44C780069E474 /* LMLotteryHistoryInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4571FB44C780069E474 /* LMLotteryHistoryInformationController.m */; };
+		8482B45B1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B45A1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m */; };
+		8482B45E1FB462880069E474 /* LotteryHistoryInfomationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B45D1FB462880069E474 /* LotteryHistoryInfomationModel.m */; };
 		848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A722E1FB0512F001AD512 /* LMCircleBannerView.m */; };
 		84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A1E1FB145A7004D9992 /* LMTabBar.m */; };
 		84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F73A211FB145ED004D9992 /* LMBettingRecordController.m */; };
@@ -94,6 +99,16 @@
 		84551EF11FB30198008583C8 /* LMPlayBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMPlayBaseController.m; sourceTree = "<group>"; };
 		84551EF61FB3026D008583C8 /* LMXLXCLotteryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMXLXCLotteryController.h; sourceTree = "<group>"; };
 		84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMXLXCLotteryController.m; sourceTree = "<group>"; };
+		8482B4501FB3EA890069E474 /* LMLotteryInfoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLotteryInfoApi.h; sourceTree = "<group>"; };
+		8482B4511FB3EA890069E474 /* LMLotteryInfoApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLotteryInfoApi.m; sourceTree = "<group>"; };
+		8482B4531FB3F0B70069E474 /* LotteryInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryInfoModel.h; sourceTree = "<group>"; };
+		8482B4541FB3F0B70069E474 /* LotteryInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryInfoModel.m; sourceTree = "<group>"; };
+		8482B4561FB44C780069E474 /* LMLotteryHistoryInformationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLotteryHistoryInformationController.h; sourceTree = "<group>"; };
+		8482B4571FB44C780069E474 /* LMLotteryHistoryInformationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLotteryHistoryInformationController.m; sourceTree = "<group>"; };
+		8482B4591FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryHistoryInfomationTableViewCell.h; sourceTree = "<group>"; };
+		8482B45A1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryHistoryInfomationTableViewCell.m; sourceTree = "<group>"; };
+		8482B45C1FB462880069E474 /* LotteryHistoryInfomationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryHistoryInfomationModel.h; sourceTree = "<group>"; };
+		8482B45D1FB462880069E474 /* LotteryHistoryInfomationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryHistoryInfomationModel.m; sourceTree = "<group>"; };
 		848A722D1FB0512F001AD512 /* LMCircleBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCircleBannerView.h; sourceTree = "<group>"; };
 		848A722E1FB0512F001AD512 /* LMCircleBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCircleBannerView.m; sourceTree = "<group>"; };
 		84F73A1D1FB145A7004D9992 /* LMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMTabBar.h; sourceTree = "<group>"; };
@@ -189,6 +204,7 @@
 		0F0BB0C71FAF408E004773E7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				8482B44F1FB3EA6A0069E474 /* LMLotteryInfoApi */,
 				84551EEB1FB2F7A1008583C8 /* LMLotteryHallApi */,
 				84F73A3A1FB15051004D9992 /* LMHomeApi */,
 				0F0BB0F21FAF47BD004773E7 /* LMResponse */,
@@ -422,6 +438,15 @@
 			path = "新六合彩";
 			sourceTree = "<group>";
 		};
+		8482B44F1FB3EA6A0069E474 /* LMLotteryInfoApi */ = {
+			isa = PBXGroup;
+			children = (
+				8482B4501FB3EA890069E474 /* LMLotteryInfoApi.h */,
+				8482B4511FB3EA890069E474 /* LMLotteryInfoApi.m */,
+			);
+			path = LMLotteryInfoApi;
+			sourceTree = "<group>";
+		};
 		848A722C1FB05022001AD512 /* LMBannerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +504,8 @@
 			children = (
 				84F73A261FB14625004D9992 /* LMLotteryInformationController.h */,
 				84F73A271FB14625004D9992 /* LMLotteryInformationController.m */,
+				8482B4561FB44C780069E474 /* LMLotteryHistoryInformationController.h */,
+				8482B4571FB44C780069E474 /* LMLotteryHistoryInformationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -486,6 +513,10 @@
 		84F73A0E1FB14567004D9992 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8482B4531FB3F0B70069E474 /* LotteryInfoModel.h */,
+				8482B4541FB3F0B70069E474 /* LotteryInfoModel.m */,
+				8482B45C1FB462880069E474 /* LotteryHistoryInfomationModel.h */,
+				8482B45D1FB462880069E474 /* LotteryHistoryInfomationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +526,8 @@
 			children = (
 				0F0949441FB3459E00D74881 /* LotteryInformationCell.h */,
 				0F0949451FB3459E00D74881 /* LotteryInformationCell.m */,
+				8482B4591FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.h */,
+				8482B45A1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -763,19 +796,23 @@
 				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
 				0F0949461FB3459E00D74881 /* LotteryInformationCell.m in Sources */,
 				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
+				8482B45B1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m in Sources */,
 				84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */,
 				84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */,
 				84551EE61FB2C7A2008583C8 /* UIImage+GradientColor.m in Sources */,
 				84F73A2B1FB14636004D9992 /* LMMineViewController.m in Sources */,
+				8482B4581FB44C780069E474 /* LMLotteryHistoryInformationController.m in Sources */,
 				0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */,
 				0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */,
 				84551EEA1FB2EAF5008583C8 /* HomeLotteryModel.m in Sources */,
 				844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */,
 				0F0BB0DE1FAF42C4004773E7 /* LMBaseController.m in Sources */,
 				0F0BB0DB1FAF4273004773E7 /* LMNavigationController.m in Sources */,
+				8482B45E1FB462880069E474 /* LotteryHistoryInfomationModel.m in Sources */,
 				84551EE31FB29DC6008583C8 /* LoopTextScrollView.m in Sources */,
 				84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */,
 				84F73A281FB14625004D9992 /* LMLotteryInformationController.m in Sources */,
+				8482B4551FB3F0B70069E474 /* LotteryInfoModel.m in Sources */,
 				84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */,
 				0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */,
 				0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */,
@@ -786,6 +823,7 @@
 				0F0BB0C11FAF3B28004773E7 /* main.m in Sources */,
 				84F73A1F1FB145A7004D9992 /* LMTabBar.m in Sources */,
 				848A722F1FB0512F001AD512 /* LMCircleBannerView.m in Sources */,
+				8482B4521FB3EA890069E474 /* LMLotteryInfoApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

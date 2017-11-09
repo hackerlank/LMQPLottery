@@ -19,7 +19,6 @@
     [super viewDidLoad];
     
 }
-
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
     if ([viewController isKindOfClass:[LMHomeViewController class]]||[viewController isKindOfClass:[LMLotteryInformationController class]]) {

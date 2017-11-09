@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LotteryInfoModel.h"
 @interface LotteryInformationCell : UITableViewCell
 
+@property(nonatomic,strong)LotteryInfoModel *model;
 @end
