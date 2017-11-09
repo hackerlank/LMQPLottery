@@ -52,13 +52,13 @@ static NSString *const LotteryHistoryInfomationTableViewCellId=@"LotteryHistoryI
     [[[LMLotteryInfoApi alloc]init] requestLotteryInfoWithLotteryId:self.lotteryId.intValue page:self.page completion:^(LMResponse *response) {
         
         if (refresh) {
-            self.datas=[LotteryHistoryInfomationModel mj_objectArrayWithKeyValuesArray:response.data];
+            self.datas=[LotteryHistoryInfomationModel mj_objectArrayWithKeyValuesArray:response.data[@"data"]];
             [self.tableView.mj_header endRefreshing];
         }else{
             NSNumber *lastPage=response.data[@"last_page"];
             self.tableView.mj_footer.hidden=self.page>=lastPage.intValue?YES:NO;
             [self.tableView.mj_footer endRefreshing];
-            [self.datas addObjectsFromArray:[LotteryHistoryInfomationModel mj_objectArrayWithKeyValuesArray:response.data]];
+            [self.datas addObjectsFromArray:[LotteryHistoryInfomationModel mj_objectArrayWithKeyValuesArray:response.data[@"data"]]];
             self.page++;
         }
         
@@ -79,15 +79,19 @@ static NSString *const LotteryHistoryInfomationTableViewCellId=@"LotteryHistoryI
 #pragma mark -UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 10;
+    return self.datas.count;
     
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     LotteryHistoryInfomationTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:LotteryHistoryInfomationTableViewCellId forIndexPath:indexPath];
+    cell.lotteryId=self.lotteryId.intValue;
+    cell.model=self.datas[indexPath.row];
     return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
 #pragma mark -
 #pragma mark -懒加载
 -(UIImageView *)bgView{
@@ -146,6 +150,8 @@ static NSString *const LotteryHistoryInfomationTableViewCellId=@"LotteryHistoryI
 -(UITableView *)tableView{
     if (!_tableView) {
         UITableView *tableView=[[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        tableView.backgroundColor=[UIColor clearColor];
+        tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
         tableView.delegate=self;
         tableView.dataSource=self;
         [tableView registerClass:[LotteryHistoryInfomationTableViewCell class] forCellReuseIdentifier:LotteryHistoryInfomationTableViewCellId];
@@ -167,5 +173,11 @@ static NSString *const LotteryHistoryInfomationTableViewCellId=@"LotteryHistoryI
         _tableView=tableView;
     }
     return _tableView;
+}
+-(NSMutableArray *)datas{
+    if (!_datas) {
+        _datas=@[].mutableCopy;
+    }
+    return _datas;
 }
 @end

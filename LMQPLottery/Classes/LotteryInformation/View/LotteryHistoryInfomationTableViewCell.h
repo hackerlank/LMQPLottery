@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LotteryHistoryInfomationModel.h"
 
 @interface LotteryHistoryInfomationTableViewCell : UITableViewCell
 
+@property(nonatomic, strong)LotteryHistoryInfomationModel *model;
+@property(nonatomic, assign)int lotteryId;
 @end

@@ -25,6 +25,7 @@
 		0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F41FAF47CD004773E7 /* LMResponse.m */; };
 		0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */; };
 		0F0BB0FD1FAF500A004773E7 /* UIColor+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */; };
+		0F0E6C171FB4943700E6291A /* LotteryResultFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0E6C161FB4943700E6291A /* LotteryResultFormView.m */; };
 		844D1B8C1FB1BD1B009E90C6 /* HomeLotteryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */; };
 		84551EE31FB29DC6008583C8 /* LoopTextScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EE21FB29DC6008583C8 /* LoopTextScrollView.m */; };
 		84551EE61FB2C7A2008583C8 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EE51FB2C7A2008583C8 /* UIImage+GradientColor.m */; };
@@ -85,6 +86,8 @@
 		0F0BB0F81FAF4B04004773E7 /* LMProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMProgressHud.m; sourceTree = "<group>"; };
 		0F0BB0FB1FAF500A004773E7 /* UIColor+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Transform.h"; sourceTree = "<group>"; };
 		0F0BB0FC1FAF500A004773E7 /* UIColor+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Transform.m"; sourceTree = "<group>"; };
+		0F0E6C151FB4943700E6291A /* LotteryResultFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryResultFormView.h; sourceTree = "<group>"; };
+		0F0E6C161FB4943700E6291A /* LotteryResultFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotteryResultFormView.m; sourceTree = "<group>"; };
 		844D1B8A1FB1BD1B009E90C6 /* HomeLotteryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeLotteryCell.h; sourceTree = "<group>"; };
 		844D1B8B1FB1BD1B009E90C6 /* HomeLotteryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeLotteryCell.m; sourceTree = "<group>"; };
 		84551EE11FB29DC6008583C8 /* LoopTextScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopTextScrollView.h; sourceTree = "<group>"; };
@@ -528,6 +531,8 @@
 				0F0949451FB3459E00D74881 /* LotteryInformationCell.m */,
 				8482B4591FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.h */,
 				8482B45A1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m */,
+				0F0E6C151FB4943700E6291A /* LotteryResultFormView.h */,
+				0F0E6C161FB4943700E6291A /* LotteryResultFormView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -812,6 +817,7 @@
 				84551EE31FB29DC6008583C8 /* LoopTextScrollView.m in Sources */,
 				84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */,
 				84F73A281FB14625004D9992 /* LMLotteryInformationController.m in Sources */,
+				0F0E6C171FB4943700E6291A /* LotteryResultFormView.m in Sources */,
 				8482B4551FB3F0B70069E474 /* LotteryInfoModel.m in Sources */,
 				84F73A221FB145ED004D9992 /* LMBettingRecordController.m in Sources */,
 				0F0BB0F11FAF476B004773E7 /* LMNetworkingManager.m in Sources */,

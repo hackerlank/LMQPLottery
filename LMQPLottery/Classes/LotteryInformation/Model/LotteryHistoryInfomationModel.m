@@ -9,8 +9,5 @@
 #import "LotteryHistoryInfomationModel.h"
 
 @implementation LotteryHistoryInfomationModel
-+(NSDictionary *)mj_replacedKeyFromPropertyName{
-    
-    return @{@"lotteryId":@"id"};
-}
+
 @end

@@ -9,7 +9,7 @@
 #import "LMBaseModel.h"
 
 @interface LotteryHistoryInfomationModel : LMBaseModel
-@property(nonatomic, strong)NSNumber *lotteryId;
+
 @property(nonatomic, copy)NSArray *data;
 @property(nonatomic, copy)NSString *create_time;
 @property(nonatomic, copy)NSString *end_color;

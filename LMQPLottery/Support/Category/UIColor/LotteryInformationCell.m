@@ -36,6 +36,10 @@
    
     
 }
+-(void)dealloc{
+    
+    
+}
 -(void)setupResultViewWith:(LotteryInfoModel *)model{
     for (UIView *view in self.contentView.subviews) {
         if (!(view.tag==3001||view.tag==3002||view.tag==3003)) {
