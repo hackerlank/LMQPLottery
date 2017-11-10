@@ -76,4 +76,18 @@
         [self.tabBarDelegate tabBarCenterButtonClicked];
     }
 }
+//超出tabbar部分的响应
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    if (view == nil) {
+        // 转换坐标系
+        CGPoint newPoint = [self.centerButton convertPoint:point fromView:self];
+        // 判断触摸点是否在button上
+        if (CGRectContainsPoint(self.centerButton.bounds, newPoint)) {
+            view = self.centerButton;
+        }
+    }
+    return view;
+}
+
 @end

@@ -16,5 +16,7 @@
 @property(nonatomic, strong)NSNumber *lottery_group_id;
 @property(nonatomic, copy)NSString *name;
 @property(nonatomic, strong)NSNumber *number;
+@property(nonatomic, copy)NSArray *animals;
+@property(nonatomic, copy)NSArray *colors;
 
 @end

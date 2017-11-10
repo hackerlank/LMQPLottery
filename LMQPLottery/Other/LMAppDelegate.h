@@ -10,4 +10,5 @@
 
 @interface LMAppDelegate : UIResponder<UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
+-(void)showLoginController;
 @end

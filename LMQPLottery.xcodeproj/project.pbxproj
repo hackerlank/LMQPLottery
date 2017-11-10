@@ -33,6 +33,19 @@
 		84551EEE1FB2F7B7008583C8 /* LMLotteryHallApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EED1FB2F7B7008583C8 /* LMLotteryHallApi.m */; };
 		84551EF21FB30198008583C8 /* LMPlayBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF11FB30198008583C8 /* LMPlayBaseController.m */; };
 		84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */; };
+		847DE11D1FB55A6800CDA9E6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE11C1FB55A6800CDA9E6 /* Utility.m */; };
+		847DE1211FB56E0200CDA9E6 /* LMUserApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1201FB56E0200CDA9E6 /* LMUserApi.m */; };
+		847DE1331FB576B900CDA9E6 /* LMLoginBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1321FB576B900CDA9E6 /* LMLoginBaseController.m */; };
+		847DE13D1FB57B2300CDA9E6 /* SGGNormalDismissTransition.h in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1351FB57AD700CDA9E6 /* SGGNormalDismissTransition.h */; };
+		847DE13E1FB57B2300CDA9E6 /* SGGNormalDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1361FB57AD700CDA9E6 /* SGGNormalDismissTransition.m */; };
+		847DE13F1FB57B2300CDA9E6 /* SGGNormalPresentTransition.h in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1371FB57AD700CDA9E6 /* SGGNormalPresentTransition.h */; };
+		847DE1401FB57B2300CDA9E6 /* SGGNormalPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1381FB57AD700CDA9E6 /* SGGNormalPresentTransition.m */; };
+		847DE1411FB57B2300CDA9E6 /* SGGPresentTransition.h in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1391FB57AD700CDA9E6 /* SGGPresentTransition.h */; };
+		847DE1421FB57B2300CDA9E6 /* SGGPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE13A1FB57AD700CDA9E6 /* SGGPresentTransition.m */; };
+		847DE1431FB57B2300CDA9E6 /* SGGTransitionDlelegateManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 847DE13B1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.h */; };
+		847DE1441FB57B2300CDA9E6 /* SGGTransitionDlelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE13C1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.m */; };
+		847DE1481FB58DB400CDA9E6 /* LMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DE1461FB58DB400CDA9E6 /* LMLoginViewController.m */; };
+		847DE1491FB58DB400CDA9E6 /* LMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DE1471FB58DB400CDA9E6 /* LMLoginViewController.xib */; };
 		8482B4521FB3EA890069E474 /* LMLotteryInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4511FB3EA890069E474 /* LMLotteryInfoApi.m */; };
 		8482B4551FB3F0B70069E474 /* LotteryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4541FB3F0B70069E474 /* LotteryInfoModel.m */; };
 		8482B4581FB44C780069E474 /* LMLotteryHistoryInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482B4571FB44C780069E474 /* LMLotteryHistoryInformationController.m */; };
@@ -102,6 +115,23 @@
 		84551EF11FB30198008583C8 /* LMPlayBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMPlayBaseController.m; sourceTree = "<group>"; };
 		84551EF61FB3026D008583C8 /* LMXLXCLotteryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMXLXCLotteryController.h; sourceTree = "<group>"; };
 		84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMXLXCLotteryController.m; sourceTree = "<group>"; };
+		847DE11B1FB55A6800CDA9E6 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		847DE11C1FB55A6800CDA9E6 /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		847DE11F1FB56E0200CDA9E6 /* LMUserApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMUserApi.h; sourceTree = "<group>"; };
+		847DE1201FB56E0200CDA9E6 /* LMUserApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMUserApi.m; sourceTree = "<group>"; };
+		847DE1311FB576B900CDA9E6 /* LMLoginBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLoginBaseController.h; sourceTree = "<group>"; };
+		847DE1321FB576B900CDA9E6 /* LMLoginBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLoginBaseController.m; sourceTree = "<group>"; };
+		847DE1351FB57AD700CDA9E6 /* SGGNormalDismissTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGGNormalDismissTransition.h; sourceTree = "<group>"; };
+		847DE1361FB57AD700CDA9E6 /* SGGNormalDismissTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGGNormalDismissTransition.m; sourceTree = "<group>"; };
+		847DE1371FB57AD700CDA9E6 /* SGGNormalPresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGGNormalPresentTransition.h; sourceTree = "<group>"; };
+		847DE1381FB57AD700CDA9E6 /* SGGNormalPresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGGNormalPresentTransition.m; sourceTree = "<group>"; };
+		847DE1391FB57AD700CDA9E6 /* SGGPresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGGPresentTransition.h; sourceTree = "<group>"; };
+		847DE13A1FB57AD700CDA9E6 /* SGGPresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGGPresentTransition.m; sourceTree = "<group>"; };
+		847DE13B1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGGTransitionDlelegateManager.h; sourceTree = "<group>"; };
+		847DE13C1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGGTransitionDlelegateManager.m; sourceTree = "<group>"; };
+		847DE1451FB58DB400CDA9E6 /* LMLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLoginViewController.h; sourceTree = "<group>"; };
+		847DE1461FB58DB400CDA9E6 /* LMLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLoginViewController.m; sourceTree = "<group>"; };
+		847DE1471FB58DB400CDA9E6 /* LMLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LMLoginViewController.xib; sourceTree = "<group>"; };
 		8482B4501FB3EA890069E474 /* LMLotteryInfoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLotteryInfoApi.h; sourceTree = "<group>"; };
 		8482B4511FB3EA890069E474 /* LMLotteryInfoApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLotteryInfoApi.m; sourceTree = "<group>"; };
 		8482B4531FB3F0B70069E474 /* LotteryInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryInfoModel.h; sourceTree = "<group>"; };
@@ -207,6 +237,7 @@
 		0F0BB0C71FAF408E004773E7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				847DE11E1FB56DEF00CDA9E6 /* LMUserApi */,
 				8482B44F1FB3EA6A0069E474 /* LMLotteryInfoApi */,
 				84551EEB1FB2F7A1008583C8 /* LMLotteryHallApi */,
 				84F73A3A1FB15051004D9992 /* LMHomeApi */,
@@ -228,6 +259,7 @@
 		0F0BB0C91FAF408F004773E7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				847DE11A1FB55A5400CDA9E6 /* Utility */,
 				0F09493F1FB3435600D74881 /* 字体 */,
 				0F0BB0E71FAF44B2004773E7 /* Category */,
 				0F0BB0E61FAF44B2004773E7 /* PCH */,
@@ -239,6 +271,7 @@
 		0F0BB0CA1FAF408F004773E7 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				847DE1341FB57AD700CDA9E6 /* SGGPresentTransition */,
 				84551EEF1FB3017C008583C8 /* LMPlayBaseController */,
 				848A722C1FB05022001AD512 /* LMBannerView */,
 				0F0BB0F61FAF4AE4004773E7 /* LMProgressHud */,
@@ -259,6 +292,7 @@
 		0F0BB0CC1FAF408F004773E7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				847DE1221FB5728000CDA9E6 /* Login */,
 				0F0BB0CD1FAF41A5004773E7 /* Main */,
 				84F73A081FB14567004D9992 /* BettingRecord */,
 				84F73A101FB14567004D9992 /* Home */,
@@ -439,6 +473,67 @@
 				84551EF71FB3026D008583C8 /* LMXLXCLotteryController.m */,
 			);
 			path = "新六合彩";
+			sourceTree = "<group>";
+		};
+		847DE11A1FB55A5400CDA9E6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				847DE11B1FB55A6800CDA9E6 /* Utility.h */,
+				847DE11C1FB55A6800CDA9E6 /* Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		847DE11E1FB56DEF00CDA9E6 /* LMUserApi */ = {
+			isa = PBXGroup;
+			children = (
+				847DE11F1FB56E0200CDA9E6 /* LMUserApi.h */,
+				847DE1201FB56E0200CDA9E6 /* LMUserApi.m */,
+			);
+			path = LMUserApi;
+			sourceTree = "<group>";
+		};
+		847DE1221FB5728000CDA9E6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				847DE1301FB5769800CDA9E6 /* LMLoginBaseController */,
+				847DE12F1FB5767E00CDA9E6 /* LMLoginViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		847DE12F1FB5767E00CDA9E6 /* LMLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				847DE1451FB58DB400CDA9E6 /* LMLoginViewController.h */,
+				847DE1461FB58DB400CDA9E6 /* LMLoginViewController.m */,
+				847DE1471FB58DB400CDA9E6 /* LMLoginViewController.xib */,
+			);
+			path = LMLoginViewController;
+			sourceTree = "<group>";
+		};
+		847DE1301FB5769800CDA9E6 /* LMLoginBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				847DE1311FB576B900CDA9E6 /* LMLoginBaseController.h */,
+				847DE1321FB576B900CDA9E6 /* LMLoginBaseController.m */,
+			);
+			path = LMLoginBaseController;
+			sourceTree = "<group>";
+		};
+		847DE1341FB57AD700CDA9E6 /* SGGPresentTransition */ = {
+			isa = PBXGroup;
+			children = (
+				847DE1351FB57AD700CDA9E6 /* SGGNormalDismissTransition.h */,
+				847DE1361FB57AD700CDA9E6 /* SGGNormalDismissTransition.m */,
+				847DE1371FB57AD700CDA9E6 /* SGGNormalPresentTransition.h */,
+				847DE1381FB57AD700CDA9E6 /* SGGNormalPresentTransition.m */,
+				847DE1391FB57AD700CDA9E6 /* SGGPresentTransition.h */,
+				847DE13A1FB57AD700CDA9E6 /* SGGPresentTransition.m */,
+				847DE13B1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.h */,
+				847DE13C1FB57AD700CDA9E6 /* SGGTransitionDlelegateManager.m */,
+			);
+			path = SGGPresentTransition;
 			sourceTree = "<group>";
 		};
 		8482B44F1FB3EA6A0069E474 /* LMLotteryInfoApi */ = {
@@ -736,6 +831,7 @@
 				0F0949491FB3484400D74881 /* liuhecai.ttf in Resources */,
 				0F09494A1FB3484400D74881 /* pmzd.ttf in Resources */,
 				0F0BB0BE1FAF3B28004773E7 /* LaunchScreen.storyboard in Resources */,
+				847DE1491FB58DB400CDA9E6 /* LMLoginViewController.xib in Resources */,
 				0F0BB0BB1FAF3B28004773E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,17 +891,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847DE13D1FB57B2300CDA9E6 /* SGGNormalDismissTransition.h in Sources */,
+				847DE13E1FB57B2300CDA9E6 /* SGGNormalDismissTransition.m in Sources */,
+				847DE13F1FB57B2300CDA9E6 /* SGGNormalPresentTransition.h in Sources */,
+				847DE1401FB57B2300CDA9E6 /* SGGNormalPresentTransition.m in Sources */,
+				847DE1411FB57B2300CDA9E6 /* SGGPresentTransition.h in Sources */,
+				847DE1421FB57B2300CDA9E6 /* SGGPresentTransition.m in Sources */,
+				847DE1431FB57B2300CDA9E6 /* SGGTransitionDlelegateManager.h in Sources */,
+				847DE1441FB57B2300CDA9E6 /* SGGTransitionDlelegateManager.m in Sources */,
 				84F73A311FB146DC004D9992 /* LMRechargeRoomController.m in Sources */,
 				84F73A361FB14AA9004D9992 /* LMAppDelegate.m in Sources */,
 				84F73A3D1FB15065004D9992 /* LMHomeApi.m in Sources */,
 				0F0BB0E11FAF42E0004773E7 /* LMBaseModel.m in Sources */,
+				847DE11D1FB55A6800CDA9E6 /* Utility.m in Sources */,
 				0F0949461FB3459E00D74881 /* LotteryInformationCell.m in Sources */,
 				0F0BB0F91FAF4B04004773E7 /* LMProgressHud.m in Sources */,
+				847DE1211FB56E0200CDA9E6 /* LMUserApi.m in Sources */,
 				8482B45B1FB45D080069E474 /* LotteryHistoryInfomationTableViewCell.m in Sources */,
 				84551EF81FB3026D008583C8 /* LMXLXCLotteryController.m in Sources */,
+				847DE1331FB576B900CDA9E6 /* LMLoginBaseController.m in Sources */,
 				84F73A391FB14FB0004D9992 /* LMHomeView.m in Sources */,
 				84551EE61FB2C7A2008583C8 /* UIImage+GradientColor.m in Sources */,
 				84F73A2B1FB14636004D9992 /* LMMineViewController.m in Sources */,
+				847DE1481FB58DB400CDA9E6 /* LMLoginViewController.m in Sources */,
 				8482B4581FB44C780069E474 /* LMLotteryHistoryInformationController.m in Sources */,
 				0F0BB0F51FAF47CD004773E7 /* LMResponse.m in Sources */,
 				0F0BB0D81FAF4257004773E7 /* LMTabBarController.m in Sources */,

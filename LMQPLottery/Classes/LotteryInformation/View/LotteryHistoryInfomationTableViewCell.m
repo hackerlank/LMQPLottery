@@ -8,11 +8,18 @@
 
 #import "LotteryHistoryInfomationTableViewCell.h"
 #import "LotteryResultFormView.h"
+typedef NS_ENUM(NSUInteger ,HistoryInformationType) {
+    HistoryInformationTypeNone =0 ,
+    HistoryInformationTypeForm
+    
+};
 @interface LotteryHistoryInfomationTableViewCell ()
 @property(nonatomic, weak)UILabel *lotteryLabel;
 @property(nonatomic, weak)UILabel *dateLabel;
 @property(nonatomic, weak)UIView *shadowView;
+@property(nonatomic, strong)LotteryResultFormView *formView;
 
+@property(nonatomic, assign)HistoryInformationType formType;
 @end
 @implementation LotteryHistoryInfomationTableViewCell
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -22,7 +29,6 @@
         [self setupSubviews];
     }
     return self;
-    
 }
 -(void)setupSubviews{
     self.backgroundColor=[UIColor clearColor];
@@ -62,21 +68,21 @@
                             make.left.equalTo(self.shadowView).mas_offset(15+30*idx);
                             make.top.equalTo(self.lotteryLabel.mas_bottom).mas_offset(4);
                             make.height.width.mas_equalTo(30);
-                           
+
                         }];
                     }else if (idx==datas.count-1){
                         NSString *imgStr=model.end_color.length?[NSString stringWithFormat:@"kj_ball_%@",model.end_color]:@"kj_ball_red";
                         [btn setBackgroundImage:[UIImage imageNamed:imgStr] forState:UIControlStateNormal];
                         [btn setBackgroundImage:[UIImage imageNamed:imgStr] forState:UIControlStateHighlighted];
-                        
+
                         [btn.imageView setContentMode:UIViewContentModeScaleToFill];
                         [btn setTitleColor:LMHexsColor(@"FFFFFF") forState:UIControlStateNormal];
                         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                             make.left.equalTo(self.shadowView).mas_offset(15+30*idx);
                             make.top.equalTo(self.lotteryLabel.mas_bottom).mas_offset(1);
                             make.size.mas_equalTo(CGSizeMake(36, 36));
-                            
-                            
+
+
                         }];
                     }
                     else{
@@ -101,19 +107,89 @@
                 }];
             }
             break;
-            
+         case 3: case 12:
+      
+            {
+                NSArray *animals=model.animals;
+                NSArray *colors=model.colors;
+                [model.data enumerateObjectsUsingBlock:^(NSString* obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+                    UIButton *subBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+                    [btn setTitle:obj forState:UIControlStateNormal];
+                    [subBtn setTitle:animals[idx] forState:UIControlStateNormal];
+                    btn.titleLabel.font=font(14);
+                    subBtn.titleLabel.font=font(8);
+                    [btn setTitleColor:LMHexsColor(@"FFFFFF") forState:UIControlStateNormal];
+                    [subBtn setTitleColor:LMHexsColor(@"63000C") forState:UIControlStateNormal];
+                    [subBtn setBackgroundColor:LMHexsColor(@"FFDC99")];
+                    subBtn.layer.cornerRadius=8;
+                    [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"kj_ball_%@",colors[idx]]] forState:UIControlStateNormal];
+                    [self.contentView addSubview:btn];
+                    [self.contentView addSubview:subBtn];
+                    float leftSpace= idx==model.data.count-1?15+36+15+(36+3)*(model.data.count-2):15+(36+3)*idx;
+                    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.left.equalTo(self.shadowView).mas_offset(leftSpace);
+                        make.top.equalTo(self.lotteryLabel.mas_bottom).mas_offset(5);
+                        make.size.mas_equalTo(CGSizeMake(36, 36));
+
+                    }];
+                    if (idx==model.data.count-2) {
+                        UILabel *label=[[UILabel alloc]init];
+                        label.text=@"+";
+                        label.textColor=LMHexsColor(@"FFFFFF");
+                        label.font=font(12);
+                        label.textAlignment=NSTextAlignmentCenter;
+                        [self.contentView addSubview:label];
+                        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.left.equalTo(btn.mas_right);
+                            make.centerY.equalTo(btn);
+                            make.size.mas_equalTo(CGSizeMake(15, 10));
+                        }];
+                    }
+                    [subBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.centerX.equalTo(btn.mas_right).mas_offset(-5);
+                        make.bottom.equalTo(btn).mas_offset(2);
+                        make.size.mas_equalTo(CGSizeMake(16, 16));
+                    }];
+
+
+                }];
+
+
+                self.formType=HistoryInformationTypeForm;
+                
+            }
+        
         default:
-        {
-            UIView *blankView=[[UIView alloc]init];
-            [self.contentView addSubview:blankView];
-            [blankView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.lotteryLabel.mas_bottom);
-                make.left.right.mas_offset(0);
-                make.height.mas_equalTo(30);
-                make.bottom.mas_offset(-20).priorityMedium();
-            }];
-        }
+//        {
+//            UIView *blankView=[[UIView alloc]init];
+//            [self.contentView addSubview:blankView];
+//            [blankView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.top.equalTo(self.lotteryLabel.mas_bottom);
+//                make.left.right.mas_offset(0);
+//                make.height.mas_equalTo(30);
+//                make.bottom.mas_offset(-20).priorityMedium();
+//            }];
+//        }
             break;
+    }
+}
+-(void)setupFormView{
+    [self.contentView addSubview:self.formView];
+    [self.formView configData:self.model.kj_result lotteryId:self.lotteryId];
+    [self.formView mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.top.equalTo(self.lotteryLabel.mas_bottom).mas_offset(50);
+                        make.left.equalTo(self.lotteryLabel);
+                        make.right.equalTo(self.dateLabel);
+                        make.height.mas_equalTo(56 );
+                        make.bottom.mas_offset(-20).priorityMedium();
+                    }];
+    
+}
+-(void)setFormType:(HistoryInformationType)formType{
+    _formType=formType;
+    if (formType==HistoryInformationTypeForm) {
+        [self setupFormView];
     }
 }
 -(UIView *)shadowView{
@@ -159,5 +235,12 @@
         _dateLabel=dateLabel;
     }
     return _dateLabel;
+}
+-(LotteryResultFormView *)formView{
+    if (!_formView) {
+        LotteryResultFormView *formView=[[LotteryResultFormView alloc]init];
+        _formView=formView;
+    }
+    return _formView;
 }
 @end

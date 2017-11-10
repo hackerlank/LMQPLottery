@@ -79,8 +79,6 @@
                         make.left.equalTo(self.shadowView).mas_offset(15+30*idx);
                         make.top.equalTo(self.titleLabel.mas_bottom).mas_offset(1);
                         make.size.mas_equalTo(CGSizeMake(36, 36));
-                     
-                        
                     }];
                 }
                 else{
@@ -102,13 +100,50 @@
             break;
          case 3: case 12:
         {
-            UIView *view=[[UIView alloc]init];
-            [self.contentView addSubview:view];
-            [view mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(self.shadowView).mas_offset(15+25*3);
-                make.top.equalTo(self.titleLabel.mas_bottom).mas_offset(10);
-                make.height.width.mas_equalTo(50);
-                make.bottom.mas_offset(-20).priorityMedium();
+            NSArray *animals=model.animals;
+            NSArray *colors=model.colors;
+            [model.data enumerateObjectsUsingBlock:^(NSString* obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+                UIButton *subBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+                [btn setTitle:obj forState:UIControlStateNormal];
+                [subBtn setTitle:animals[idx] forState:UIControlStateNormal];
+                btn.titleLabel.font=font(14);
+                subBtn.titleLabel.font=font(8);
+                [btn setTitleColor:LMHexsColor(@"FFFFFF") forState:UIControlStateNormal];
+                [subBtn setTitleColor:LMHexsColor(@"63000C") forState:UIControlStateNormal];
+                [subBtn setBackgroundColor:LMHexsColor(@"FFDC99")];
+                subBtn.layer.cornerRadius=8;
+                [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"kj_ball_%@",colors[idx]]] forState:UIControlStateNormal];
+                [self.contentView addSubview:btn];
+                [self.contentView addSubview:subBtn];
+                float leftSpace= idx==model.data.count-1?15+36+15+(36+3)*(model.data.count-2):15+(36+3)*idx;
+                [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.equalTo(self.shadowView).mas_offset(leftSpace);
+                    make.top.equalTo(self.titleLabel.mas_bottom).mas_offset(5);
+                    make.size.mas_equalTo(CGSizeMake(36, 36));
+                    
+                }];
+                if (idx==model.data.count-2) {
+                    UILabel *label=[[UILabel alloc]init];
+                    label.text=@"+";
+                    label.textColor=LMHexsColor(@"FFFFFF");
+                    label.font=font(12);
+                    label.textAlignment=NSTextAlignmentCenter;
+                    [self.contentView addSubview:label];
+                    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.left.equalTo(btn.mas_right);
+                        make.centerY.equalTo(btn);
+                        make.size.mas_equalTo(CGSizeMake(15, 10));
+                    }];
+                }
+                [subBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.centerX.equalTo(btn.mas_right).mas_offset(-5);
+                    make.bottom.equalTo(btn).mas_offset(2);
+                    make.size.mas_equalTo(CGSizeMake(16, 16));
+                    make.bottom.mas_offset(-20).priorityMedium();
+                }];
+                
+                
             }];
             
         }

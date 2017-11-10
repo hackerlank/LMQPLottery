@@ -90,7 +90,7 @@ static NSString *const LotteryHistoryInfomationTableViewCellId=@"LotteryHistoryI
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 120;
 }
 #pragma mark -
 #pragma mark -懒加载

@@ -8,6 +8,7 @@
 
 #import "LMTabBarController.h"
 #import "LMNavigationController.h"
+#import "LMAppDelegate.h"
 
 #import "LMHomeViewController.h"
 #import "LMLotteryInformationController.h"
@@ -16,7 +17,7 @@
 #import "LMMineViewController.h"
 
 #import "LMTabBar.h"
-@interface LMTabBarController ()<LMTabBarDelegate>
+@interface LMTabBarController ()<LMTabBarDelegate,UITabBarControllerDelegate>
 
 @end
 
@@ -32,6 +33,7 @@
     LMTabBar *customTabBar=[[LMTabBar alloc]init];
     customTabBar.tabBarDelegate=self;
     [self setValue:customTabBar forKey:@"tabBar"];
+    self.delegate=self;
 }
 -(void)setupChildControllers{
     LMHomeViewController *home=[[LMHomeViewController alloc]init];
@@ -81,11 +83,37 @@
     
     
 }
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    if ([viewController isKindOfClass:[LMNavigationController class]]) {
+        LMNavigationController *vc=(LMNavigationController *)viewController;
+        if ([vc.topViewController isKindOfClass:[LMBettingRecordController class]]||[vc.topViewController isKindOfClass:[LMMineViewController class]]) {
+            
+            if (![[Utility shareInstance] isLogin]) {
+                LMAppDelegate *appDelegate=(LMAppDelegate *)[UIApplication sharedApplication].delegate;
+                [appDelegate showLoginController];
+                return NO;
+            }
+            
+        }
+    }
+    
+    
+ 
+    return YES;
+}
 #pragma mark LMTabBarDelegate
 -(void)tabBarCenterButtonClicked{
-    
-    
-    
+    if ([[Utility shareInstance] isLogin]) {
+        LMRechargeRoomController *rechargeController=[[LMRechargeRoomController alloc]init];
+        [SGGPresentTransition presentViewController:rechargeController animated:YES completion:nil];
+        
+        
+    }else{
+        
+        LMAppDelegate *delegate=(LMAppDelegate *)[UIApplication sharedApplication].delegate;
+        [delegate showLoginController];
+    }
+
 }
 
 @end

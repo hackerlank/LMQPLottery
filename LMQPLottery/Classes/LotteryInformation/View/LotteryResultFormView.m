@@ -22,6 +22,65 @@
     return self;
 }
 -(void)configData:(NSArray *)kjResult lotteryId:(int)lotteryId{
+
+    [self.topView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.bottomView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    switch (lotteryId) {
+        case 1: case 2:
+            [self setupPCDD:kjResult];
+            break;
+        case 3: case 12:
+            [self setupXLHC:kjResult];
+            
+        default:
+            break;
+    }
+    
+    
+    
+}
+-(void)setupXLHC:(NSArray *)kjResult
+{
+    
+    NSArray *firstArray=kjResult[0];
+    NSArray *lastArray=kjResult[1];
+    [firstArray enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:obj forState:UIControlStateNormal];
+        [btn setTitleColor:LMHexsColor(@"FFFFFF") forState:UIControlStateNormal];
+        btn.titleLabel.font=font(12);
+        btn.layer.borderColor=LMColor_RGBA(255, 255, 255, 0.3).CGColor;
+        btn.layer.borderWidth=0.25;
+        [self.topView addSubview:btn];
+        
+        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_offset(idx*(kScreenWidth-48)/3);
+            make.width.mas_equalTo((kScreenWidth-48)/3);
+            make.bottom.top.mas_offset(0);
+        }];
+        
+    }];
+    
+    [lastArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:obj forState:UIControlStateNormal];
+        [btn setTitleColor:LMHexsColor(@"FFFFFF") forState:UIControlStateNormal];
+        btn.titleLabel.font=font(12);
+        btn.layer.borderColor=LMColor_RGBA(255, 255, 255, 0.3).CGColor;
+        btn.layer.borderWidth=0.25;
+        [self.bottomView addSubview:btn];
+        
+        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_offset(idx*(kScreenWidth-48)/3);
+            make.width.mas_equalTo((kScreenWidth-48)/3);
+            make.top.bottom.mas_offset(0);
+        }];
+    }];
+    
+    
+}
+//PCDD
+-(void)setupPCDD:(NSArray *)kjResult{
     NSArray *firstArray=kjResult[0];
     NSArray *lastArray=kjResult[1];
     [firstArray enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -58,8 +117,6 @@
             make.top.bottom.mas_offset(0);
         }];
     }];
-    
-    
 }
 -(UIView *)backView{
     if (!_backView) {

@@ -34,7 +34,7 @@
 
 //#import "LMNetworkManager.h"
 #import "LMProgressHud.h"
-
+#import "SGGPresentTransition.h"
 
 /***********************接口库************************/
 #import "LMApi.h"
@@ -45,7 +45,7 @@
 
 #import "LMConst.h"
 /*************************工具类**************************/
-
+#import "Utility.h"
 
 /*************************屏幕相关************************/
 

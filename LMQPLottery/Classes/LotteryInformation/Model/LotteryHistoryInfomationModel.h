@@ -15,5 +15,9 @@
 @property(nonatomic, copy)NSString *end_color;
 @property(nonatomic, copy)NSArray *kj_result;
 @property(nonatomic, copy)NSString *number;
+@property(nonatomic, copy)NSString *extfield;
+@property(nonatomic, copy)NSArray *animals;
+@property(nonatomic, copy)NSArray *colors;
+
 
 @end
